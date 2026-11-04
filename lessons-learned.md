@@ -22,6 +22,11 @@ A running list of mistakes, fixes, and things I would do differently.
 - **What I learned:** Docker publishes ports through its own iptables rules, so `ufw` does not block them.
 - **Takeaway:** keep no router port forwarding, and bind container ports to specific addresses.
 
+## Pi-hole: testing failover
+- **What happened:** after stopping the container, ads still did not show.
+- **Cause:** browser ad blocker and cached DNS, not Pi-hole.
+- **Takeaway:** change one variable at a time, flush caches, and test with a tool like `nslookup` instead of judging by what a browser shows.
+
 ## Things I would do differently
 - Take notes while working instead of afterward.
 - Test every security change from a second session before closing the first.

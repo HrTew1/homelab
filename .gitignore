@@ -4,3 +4,4 @@
 id_*
 *.log
 secrets/
+etc-pihole/

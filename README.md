@@ -26,7 +26,7 @@ A cybersecurity home lab built to learn Linux administration, networking, and se
 - [x] SSH key management (separate keys for Windows, Kali VM, and GitHub)
 - [x] Firewall, fail2ban, automatic updates
 - [x] Docker
-- [ ] Pi-hole
+- [x] Pi-hole
 - [ ] Tailscale
 - [ ] Isolated security lab (Kali + vulnerable VMs)
 - [ ] Monitoring and detection (Wazuh)
@@ -35,4 +35,5 @@ A cybersecurity home lab built to learn Linux administration, networking, and se
 - [01 - Ubuntu Server install](docs/01-ubuntu-server-install.md)
 - [02 - SSH hardening and key management](docs/02-ssh-hardening.md)
 - [03 - Docker install](docs/03-docker-install.md)
+- [04 - Pi-hole](docs/04-pihole.md)
 - [Lessons learned](lessons-learned.md)
