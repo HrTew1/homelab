@@ -66,6 +66,36 @@ The first key had been generated inside the Kali VM. Since that VM runs attack t
 ### 7. Optional access from Kali
 Created a separate key in the VM (`id_servlab_kali`) with its own passphrase and added its public key to the server. If the VM is ever compromised, deleting that one line from `authorized_keys` removes its access without affecting the Windows key.
 
+## Other hardening steps
+
+### Firewall (ufw)
+SSH is allowed first, so enabling the firewall cannot lock me out:
+```
+sudo ufw allow OpenSSH
+sudo ufw enable
+sudo ufw status
+```
+
+### fail2ban
+Temporarily bans IPs that repeatedly fail to log in:
+```
+sudo apt install fail2ban -y
+sudo systemctl enable --now fail2ban
+sudo fail2ban-client status sshd
+```
+
+### Automatic security updates
+```
+sudo apt install unattended-upgrades -y
+sudo dpkg-reconfigure --priority=low unattended-upgrades
+```
+
+### Checking what is listening
+```
+sudo ss -tulpn
+```
+Only SSH and local system services should appear. I run this again after installing anything new.
+
 ## Problems and fixes
 
 ### Password login stayed on after "hardening"

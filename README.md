@@ -24,8 +24,8 @@ A cybersecurity home lab built to learn Linux administration, networking, and se
 - [x] Ubuntu Server installed
 - [x] SSH hardening (keys only, root login off)
 - [x] SSH key management (separate keys for Windows, Kali VM, and GitHub)
-- [ ] Firewall, fail2ban, automatic updates
-- [ ] Docker
+- [x] Firewall, fail2ban, automatic updates
+- [x] Docker
 - [ ] Pi-hole
 - [ ] Tailscale
 - [ ] Isolated security lab (Kali + vulnerable VMs)
@@ -34,4 +34,5 @@ A cybersecurity home lab built to learn Linux administration, networking, and se
 ## Docs
 - [01 - Ubuntu Server install](docs/01-ubuntu-server-install.md)
 - [02 - SSH hardening and key management](docs/02-ssh-hardening.md)
+- [03 - Docker install](docs/03-docker-install.md)
 - [Lessons learned](lessons-learned.md)
