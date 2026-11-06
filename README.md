@@ -27,7 +27,7 @@ A cybersecurity home lab built to learn Linux administration, networking, and se
 - [x] Firewall, fail2ban, automatic updates
 - [x] Docker
 - [x] Pi-hole
-- [ ] Tailscale
+- [x] Tailscale
 - [ ] Isolated security lab (Kali + vulnerable VMs)
 - [ ] Monitoring and detection (Wazuh)
 
@@ -36,4 +36,5 @@ A cybersecurity home lab built to learn Linux administration, networking, and se
 - [02 - SSH hardening and key management](docs/02-ssh-hardening.md)
 - [03 - Docker install](docs/03-docker-install.md)
 - [04 - Pi-hole](docs/04-pihole.md)
+- [05 - Tailscale](docs/05-tailscale.md)
 - [Lessons learned](lessons-learned.md)
